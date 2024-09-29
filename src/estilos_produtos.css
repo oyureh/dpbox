@@ -1,0 +1,21 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+   
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+h2{
+    text-align: center;
+}
+
+aside{
+    align-self: flex-start;
+}
+
+div{
+    align-self: center;
+}

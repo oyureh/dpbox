@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../DPbox/imgs/62941cardfilebox_109271.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            background-color: #003479;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 100vh;
+            width: 100vw;
+            text-align: justify;
+        }
+
+        main{
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #login{
+           background-color:#014caf;
+           width: 350px;
+           height: 500px;
+           border-radius: 15px;
+           box-shadow: 5px 5px 10px #000f96c4;
+           overflow: hidden;
+           transition: width 0.5s, height 0.5s;
+           transition: ease;
+
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        
+        }
+
+        #img-login{
+            display: block;
+            background-image: url(../imgs/dpbox-logo2\ \(1\).png);
+            background-size: cover;
+            background-position: center;
+            width: 330px;
+            height: 150px
+        }
+
+        #formulario{
+            display: block;
+            padding: 15px;
+        }
+
+        #formulario > h1 {
+            text-align: center;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            padding: 3px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: rgb(88, 160, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            height: 40px;
+        }
+
+        input[type=submit]:hover {
+            font-weight: bold;
+            color: white;
+            background-color: rgb(44, 70, 102);
+        }
+
+        .campo{
+            padding: 3px;
+            margin: 10px;
+            width: 100%;
+            background-color:#f1d70b;
+            border-radius: 5px;
+        }
+
+        .campo > input{
+            margin-left: 5px;
+            background-color:#ffee51 ;
+            width: calc(100%-30) ;
+            border: none;
+            height: 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            
+        }
+
+        .campoI{
+            padding: 3px;
+            margin: 10px;
+            width: 100%;
+            background-color:#f1d70b;
+            border-radius: 5px;
+        }
+
+        .campoI > input{
+            margin-left: 5px;
+            background-color:#ffee51 ;
+            width: calc(100%-30) ;
+            border: none;
+            height: 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            
+        }
+
+        .campoI > i{
+            margin-left: -98px;
+        }
+
+
+        @media screen and (min-width:768px) and (max-width: 992px) {
+
+            div#login {
+                width: 80%;
+            }
+
+            div#img-login {
+                
+                background-image: url(../imgs/loginimg.jpg);
+                float: left;
+                width: 40%;
+                height: 100%;
+            }
+
+            div#formulario{
+                float: right;
+                width: 60%;
+            }
+        }
+
+        @media screen and (min-width:993px) {
+
+            div#login {
+                width: 80%;
+                height: 80%;
+            }
+
+            div#img-login {
+                background-image: url(../imgs/loginimg.jpg);
+                float: right;
+                width: 50%;
+                height: 100%;
+            }
+
+            div#formulario{
+                float: left;
+                width: 50%;
+            }
+
+            div#formulario > p{
+                font-size: 1.2em;
+            }
+
+            div#formulario > h1{
+                font-size: 1.7em;
+            }
+
+            div.campo{
+                padding: 5px;
+            }
+        }
+
+    </style>
+    <title>login</title>
+</head>
+<body>
+    <main>
+        <div id="login">
+            <div id="img-login">
+            </div>
+
+            <div id="formulario">
+                <h1> Login</h1>
+                <P> seja bem-vindo(a) à dpbox. Faça seu login para poder ter acesso a todos seus documentos</P>
+                <form action="login.php" method="POST">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="name" name="nome" id="inome" placeholder="seu nome" autocomplete="email"
+                        required maxlength="120">
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">mail</i>
+                        <input type="email" name="gmail" id="ilogin" placeholder="seu gmail" autocomplete="email"
+                        required minlength="15">
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" 
+                        autocomplete="current-password" >
+                    </div>
+                    <div class="campoI">
+                        <i class="material-icons">cellphone</i>
+                        <input type="tel" name="telefone" id="itelefone" placeholder="seu número" 
+                         required minlength="5">
+                    </div>
+                    <input type="submit" value="entrar">
+                </form>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
