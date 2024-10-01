@@ -127,9 +127,6 @@ header > h1{
     text-align: center;
 }
 
-#produtos > p{
-    font-size: 1.1em;
-}
 
 .carousel {
     display: flex;
@@ -187,7 +184,6 @@ header > h1{
   }
 
 section#loc{
-    padding-bottom: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
     background-image: linear-gradient(#004299d0, #0F23D9);
@@ -197,29 +193,13 @@ section#loc{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     }
 
-.maps{
-    align-self: center;
-    border: solid 1px black;
-    border-radius: 10px;
-    margin-left: 70px;
-    flex-shrink: 1;
-}
-
-.container-img{
-    margin-left: 40px;
-    margin-top: 25px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap:wrap;
-    flex-direction: column;
-}
-
 .unidade{   
-
     flex: auto;
-    margin-left: 20px;
+    margin: 30px;
     border-radius: 10px;
 }
 
@@ -229,19 +209,36 @@ section#loc{
 
 /*fim pagina home*/
 
-footer{
+
+.py-5{
+    display: flex;
     background-color:var(--cor01);
-    text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-top: 20px;
-   padding-top: 10px;
-   
 }
 
 footer > p {
-   margin: 3px 3px 3px 3px;
+   margin: 5px 5px 5px 5px;
 }
+
+.nav-item-mb-2:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+    color: black;
+}
+
+.maps{
+    border-radius: 10px;
+    align-self: stretch;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
 /*inicio pagina quem somos*/
 
 #apresentacao{
@@ -311,8 +308,7 @@ footer > p {
 
 #apresentacao-text > div > p{
     color:var(--cor05);
-    font-size: 1.1em;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     background-color: var(--cor02);
     border-bottom-right-radius: 10px;
