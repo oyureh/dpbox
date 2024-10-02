@@ -30,29 +30,34 @@ main{
 header {
     display: flex;
     align-items: center; 
-    justify-content: space-between;
+    justify-content:flex-start;
     padding: 5px 20px; 
-    background-color:var(--cor01) 
+    background-color:var(--cor01);
+    position: fixed;
+    z-index: 1090;
+    width: 100%;
+
 }
 
 header > h1{
     opacity: 0;
 }
 
-.logo{
-    flex: none;
+#logo{
+    flex: 0 3 auto;
+    
 }
 
 .homeA{
-    flex:0 2 auto
+    flex:1 2 auto
 }
 
 .homeB{
-    flex: 0 1 auto;
+    flex: 1 1 auto;
 }
 
 .homeC{
-    flex: 0 0 auto;
+    flex: 1 0 auto;
 }
 
 .navigation a {
@@ -75,6 +80,7 @@ header > h1{
     width: 100%;
     background-image: url(../DPbox/imgs/background.jpg);
     background-size: cover;
+    background-attachment: fixed;
     height: 550px;
 
     display:flex;
@@ -244,7 +250,7 @@ footer > p {
 #apresentacao{
     display: flex;
     flex-direction: row;
-    margin: 20px 40px 20px 40px;
+    margin: 0px 40px 20px 40px;
     padding: 10px 50px 10px 50px;
     font-size: 1.1rem;
     background-color: var(--cor02);
@@ -254,6 +260,7 @@ footer > p {
 
     
 .apresentacao-img {
+    align-self: center;
     border-radius: 50%;
     border: 2px solid var(--cor06);
 }
@@ -277,17 +284,20 @@ footer > p {
 }
 
 #apresentacao-video{
-    margin: 20px 40px 20px 40px;
+    margin: 20px 0px 20px 0px;
     display: flex;
-    flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    background-color: var(--cor02);
+    width: 100%;
+    border-radius: 10px;
 }
 
 .QS_video{
     max-width: 800px;
     min-width: 300px;
     height: 500px;
+    margin: 0px 0px 20px 0px;
 }
 
 
