@@ -7,37 +7,38 @@
 
 :root {
     --cor01: #ffcc14;
-    --cor02: #004299d0;
+    --cor02: #1a3e78;
     --cor03: #0F23D9;
-    --cor04: #f5a700;
+    --cor04: #f8951d;
     --cor05: #000000;
     --cor06: #fff;
-    --cor07: #484DB2;
+    --cor07: #fafafa;
     --cor08: #311919;
 }
 
 body{
-    
+
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 main{
     text-align: justify;
     text-decoration: none;
+    padding-top: 70px;
 }
 
 
 header {
     display: flex; 
     flex-wrap: wrap;
-    background-color:var(--cor01);
-    /*position: fixed;
+    background-color:#fafafa;
+    position: fixed;
     z-index: 1090;
-    width: 100%;*/
+    width: 100%;  
 }
 
 #header_esquerda{
-    margin-left: 5px;
+    margin-left: 40px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -53,12 +54,6 @@ header {
     font-size: larger;
 }
 
-.navigation a:hover {
-    background-color: var(--cor03);
-    border-radius: 5px;
-    color: var(--cor01);
-}
-
 #divBusca {
     margin-left: 20px;
     margin-top: 20px;
@@ -67,28 +62,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #025fd8d0;
-    width:300px;
+    background-color: #033b85e1;
+    width:200px;
     height:32px;
     border-radius: 10px;
     cursor: pointer;
     flex: 0 2 auto;
 }
 
-#btnBusca{
-    background-color: #004299d0 ;
-    width: 100%;
-    height: 100%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: none;
-    color: #ffd640;
-    font-weight: bold;
+#divBusca > p {
+    margin-top: 12px;
+    font-weight: bolder;
+    color: var(--cor01);
 }
 
-section#divBusca> figure{
-    margin-top: 15px;
-}
 
 /* fim header */
 .img-header{
@@ -97,7 +84,7 @@ section#divBusca> figure{
     background-image: url(../DPbox/imgs/background.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 550px;
+    height: 500px;
 
     display:flex;
     flex-direction: row;
@@ -115,33 +102,21 @@ section#divBusca> figure{
 }
 
 .img-text > h1 {
-    margin-bottom: 20px;
-    color: var(--cor01);
+    color: var(--cor04);
 }
 
 .img-text > p{
     color: var(--cor06);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .login{
-    text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: transparent;
 }
 
 .login > a {
     text-decoration: none;
-    color: #000000;
-}
-
-#home{
-    margin: 20px 30px 20 30px;
-    position: relative;
-}
-
-#produtos{
-    margin: 40px 0px 40px 0px;
+    color: var(--cor04);
 }
 
 .container-produtos{
@@ -149,27 +124,18 @@ section#divBusca> figure{
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin: 40px;
+    background-color: var(--cor07);
 }
 
 .container-produtos > figure{
     margin: 0px;
 }
 
-.container-produtos > figure > img{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+.container-text{
+    margin: 40px;
+    font-weight: 700;
 }
 
-.container-text{
-    padding: 40px;
-    margin: 0px;
-    background-color: #185099d0;
-    color: black;
-    font-weight: 600;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
 
 @media screen and (max-width:1180px) {
     
@@ -177,19 +143,19 @@ section#divBusca> figure{
         display: flex;
         flex-direction: column;
     }
-
-    .container-produtos > figure > img{
-        border-radius: 10px;
-    }
-
-    .container-text{
-        border-radius: 10px;
-    }
 }
 
-#produtos> h2 {
+#produtos{ /* section dos slides  */
+    margin: 0px 0px 40px 0px;
+}
+
+#produtos>  h2 {
     margin-top:10px;
     text-align: center;
+}
+
+#container-cor{
+    background-color: var(--cor07);
 }
 
 .carousel {
@@ -235,6 +201,9 @@ section#divBusca> figure{
     cursor: pointer;
   }
 
+  .navigation_slides label:hover{
+    background-color: var(--cor02);
+  }
   input {
     opacity: 0;
   }
@@ -248,12 +217,7 @@ section#divBusca> figure{
   }
 
 section#loc{
-    margin-top: 40px;
-    margin-bottom: 40px;
     background-image: linear-gradient(#004299d0, #0F23D9);
-    border: 1px solid var(--cor07);
-    box-shadow: 3px 3px 10px var(--cor03);
-    border-radius: 10px;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -265,6 +229,7 @@ section#loc{
     flex: auto;
     margin: 30px;
     border-radius: 10px;
+    min-width: 300px;
 }
 
 .unidade:hover{
@@ -306,30 +271,30 @@ footer > p {
 /*inicio pagina quem somos*/
 
 #apresentacao{
+
     display: flex;
     flex-direction: row;
-    margin: 0px 40px 20px 40px;
-    padding: 10px 50px 10px 50px;
+    margin: 20px 40px 20px 40px;
+    padding: 30px 50px 10px 50px;
     font-size: 1.1rem;
     background-color: var(--cor02);
     border-radius: 10px;
-    box-shadow: 5px 5px 15px var(--cor02);
+
 }
 
     
 .apresentacao-img {
     align-self: center;
     border-radius: 50%;
-    border: 2px solid var(--cor06);
 }
 
      
 .p-dpbox{
-    color: var(--cor05);
+    color: var(--cor07);
     margin: 10px;
     padding: 10px;
     text-align: justify;
-    align-self: flex-end;
+   align-self: center;
 }
 
 @media screen and (max-width:768px) {
@@ -381,11 +346,12 @@ footer > p {
     background-color: var(--cor02);
     border-bottom-right-radius: 10px;
     border-top-left-radius: 15px;
-}
-
-#apresentacao-text > div{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#apresentacao-text > div > p{
+    color: var(--cor07);
 }
 
 /*fim pagina quem somos*/

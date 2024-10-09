@@ -27,7 +27,7 @@ def check_and_insert_user(connection, nome, gmail, senha, telefone):
     else:
         # Insere o novo usuário
         cursor.execute(
-            "INSERT INTO login (nome, gmail, senha, telefone) VALUES (%s, %s, %s, %s)",
+            "INSERT INTO login (nome, gmail, senha, telefone) VALUES (%nome, %gmail, %senha, %telefone)",
             (nome, gmail, senha, telefone)
         )
         connection.commit()
