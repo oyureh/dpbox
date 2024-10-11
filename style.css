@@ -76,36 +76,6 @@ header {
     color: var(--cor01);
 }
 
-
-/* fim header */
-
-/* .img-text{
-    margin-left: 50px;
-    width: 350px;
-    align-self: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.img-text > h1 {
-    color: var(--cor04);
-}
-
-.img-text > p{
-    color: var(--cor06);
-    margin-bottom: 5px;
-}
-
-.login{
-    background-color: transparent;
-}
-
-.login > a {
-    text-decoration: none;
-    color: var(--cor04);
-} */
-
 .container-produtos{
     display: flex;
     align-items: center;
@@ -179,8 +149,6 @@ section#loc{
 .py-5{
     display: flex;
     background-color:var(--cor04);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 footer > p {
@@ -280,13 +248,22 @@ footer > p {
     align-items: center;
     justify-content: center;
     color: var(--cor07);
+    margin-top: 40px;
+}
+
+#container-serviços > div{
+    align-self: stretch;
 }
 
 .container-strech{
     background-color: var(--cor02);
-    width: 200px;
+    width: 250px;
     height: 650px;
     border-radius: 10px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-alinhamento{
@@ -296,39 +273,70 @@ footer > p {
 .container-superior{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
 .container-inferior{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .escuro{
     margin: 10px;
     background-color: #050a30;
-    width: 300px;
+    width: 250px;
     height: 300px;
     border-radius: 10px;
     position: relative;
+}
+
+.escuro  >p{
+    text-align: justify;
+    opacity: 0;
+    padding: 15px;
+}
+
+.escuro  >p:hover{
+    opacity: 1;
 }
 
 .intermediario{
     margin: 10px;
     background-color: #1a3e78;
-    width: 300px;
+    width: 250px;
     height: 300px;
     border-radius: 10px;
     position: relative;
 }
 
+.intermediario  >p{
+    text-align: justify;
+    opacity: 0;
+    padding: 15px;
+}
+
+.intermediario  >p:hover{
+    opacity: 1;
+}
+
 .claro{
     margin: 10px;
     background-color: #8998b3;
-    width: 300px;
+    width: 250px;
     height: 300px;
     border-radius: 10px;
     position: relative;
+}
+
+.claro  >p{
+    opacity: 0;
+    padding: 15px;
+}
+
+.claro  >p:hover{
+    opacity: 1;
 }
 
 .icones-produtos{
@@ -348,4 +356,43 @@ footer > p {
 }
 
 /*fim hub de produtos*/
+
+/* footer Q.S */
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--cor04);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
+
+.container-redes{
+    align-self: flex-end;
+}
+
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container-contatos{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container-redes{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-redes > a > img{
+    margin-top: 7px ;
+}
+
+
 
